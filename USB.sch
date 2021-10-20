@@ -1,0 +1,260 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 USB1
+U 1 1 616F3AB5
+P 4850 3650
+F 0 "USB1" H 4957 4517 50  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 4957 4426 50  0000 C CNN
+F 2 "" H 5000 3650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5000 3650 50  0001 C CNN
+	1    4850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 616F5503
+P 5800 3050
+F 0 "#PWR?" H 5800 2900 50  0001 C CNN
+F 1 "VBUS" H 5815 3223 50  0000 C CNN
+F 2 "" H 5800 3050 50  0001 C CNN
+F 3 "" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3050 5450 3050
+$Comp
+L Device:R_Small R1
+U 1 1 616F5E97
+P 5650 3250
+F 0 "R1" V 5585 3255 50  0000 C CNN
+F 1 "5.1k" V 5650 3250 35  0000 C CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "~" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3250 5550 3250
+$Comp
+L Device:R_Small R2
+U 1 1 616F7393
+P 5800 3350
+F 0 "R2" V 5735 3355 50  0000 C CNN
+F 1 "5.1k" V 5800 3350 35  0000 C CNN
+F 2 "" H 5800 3350 50  0001 C CNN
+F 3 "~" H 5800 3350 50  0001 C CNN
+	1    5800 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3350 5700 3350
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 616F7C9A
+P 6000 3350
+F 0 "#PWR?" H 6000 3150 50  0001 C CNN
+F 1 "GNDPWR" H 6004 3196 50  0000 C CNN
+F 2 "" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3350 6000 3350
+Wire Wire Line
+	5750 3250 6000 3250
+Wire Wire Line
+	6000 3250 6000 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	5500 3650 5600 3650
+Wire Wire Line
+	5450 3650 5500 3650
+Connection ~ 5500 3650
+Wire Wire Line
+	5450 3550 5500 3550
+Wire Wire Line
+	5500 3550 5500 3650
+Wire Wire Line
+	5500 3850 5450 3850
+Wire Wire Line
+	5500 3750 5600 3750
+Connection ~ 5500 3750
+Wire Wire Line
+	5450 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 3850
+Text GLabel 5600 3650 2    50   BiDi ~ 0
+USB_D-
+Text GLabel 5600 3750 2    50   BiDi ~ 0
+USB_D+
+NoConn ~ 5450 4150
+NoConn ~ 5450 4250
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 616FBFC2
+P 4550 4850
+F 0 "#PWR?" H 4550 4650 50  0001 C CNN
+F 1 "GNDPWR" H 4554 4696 50  0000 C CNN
+F 2 "" H 4550 4800 50  0001 C CNN
+F 3 "" H 4550 4800 50  0001 C CNN
+	1    4550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4700 4550 4850
+$Comp
+L Device:L_Core_Ferrite_Small L1
+U 1 1 616FE447
+P 5150 4700
+F 0 "L1" V 5355 4700 50  0000 C CNN
+F 1 "120@100Mhz" V 5264 4700 50  0000 C CNN
+F 2 "" H 5150 4700 50  0001 C CNN
+F 3 "~" H 5150 4700 50  0001 C CNN
+	1    5150 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 4700 5450 4900
+$Comp
+L power:GND #PWR?
+U 1 1 61700E88
+P 5450 4900
+F 0 "#PWR?" H 5450 4650 50  0001 C CNN
+F 1 "GND" H 5455 4727 50  0000 C CNN
+F 2 "" H 5450 4900 50  0001 C CNN
+F 3 "" H 5450 4900 50  0001 C CNN
+	1    5450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1.5KExxCA D1
+U 1 1 61701843
+P 5150 4900
+F 0 "D1" H 5150 4700 50  0000 C CNN
+F 1 "1.5KExxCA" H 5150 4800 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 5150 4700 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 5150 4900 50  0001 C CNN
+	1    5150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4900 4950 4700
+Wire Wire Line
+	4950 4900 5000 4900
+Wire Wire Line
+	5300 4900 5350 4900
+Wire Wire Line
+	5350 4900 5350 4700
+Wire Wire Line
+	5450 4700 5350 4700
+Wire Wire Line
+	4850 4700 4850 4550
+Wire Wire Line
+	5050 4700 4950 4700
+Connection ~ 4950 4700
+Wire Wire Line
+	4950 4700 4850 4700
+Connection ~ 5350 4700
+Wire Wire Line
+	5350 4700 5250 4700
+Wire Wire Line
+	4550 4550 4550 4700
+Wire Wire Line
+	4550 4700 4850 4700
+Connection ~ 4550 4700
+Connection ~ 4850 4700
+$Comp
+L Power_Protection:SRV05-4 ESD1
+U 1 1 61715336
+P 7850 3800
+F 0 "ESD1" H 7850 4481 50  0000 C CNN
+F 1 "SRV05-4" H 7850 4390 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8550 3350 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 7850 3800 50  0001 C CNN
+	1    7850 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7350 3900
+NoConn ~ 8350 3700
+$Comp
+L power:GND #PWR?
+U 1 1 61716A8A
+P 7850 4450
+F 0 "#PWR?" H 7850 4200 50  0001 C CNN
+F 1 "GND" H 7855 4277 50  0000 C CNN
+F 2 "" H 7850 4450 50  0001 C CNN
+F 3 "" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4450 7850 4300
+$Comp
+L power:+5V #PWR?
+U 1 1 61717AEF
+P 8200 3300
+F 0 "#PWR?" H 8200 3150 50  0001 C CNN
+F 1 "+5V" H 8215 3473 50  0000 C CNN
+F 2 "" H 8200 3300 50  0001 C CNN
+F 3 "" H 8200 3300 50  0001 C CNN
+	1    8200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3300 7850 3300
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 6171904B
+P 7350 3300
+F 0 "F1" V 7145 3300 50  0000 C CNN
+F 1 "500mA" V 7236 3300 50  0000 C CNN
+F 2 "" H 7400 3100 50  0001 L CNN
+F 3 "~" H 7350 3300 50  0001 C CNN
+	1    7350 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3300 7850 3300
+Connection ~ 7850 3300
+$Comp
+L power:VBUS #PWR?
+U 1 1 6171A25E
+P 6850 3300
+F 0 "#PWR?" H 6850 3150 50  0001 C CNN
+F 1 "VBUS" H 6865 3473 50  0000 C CNN
+F 2 "" H 6850 3300 50  0001 C CNN
+F 3 "" H 6850 3300 50  0001 C CNN
+	1    6850 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 3900 2    50   BiDi ~ 0
+USB_D-
+Wire Wire Line
+	8350 3900 8500 3900
+Text GLabel 7200 3700 0    50   BiDi ~ 0
+USB_D+
+Wire Wire Line
+	7350 3700 7200 3700
+Wire Wire Line
+	7250 3300 6850 3300
+Text Notes 7350 7500 0    50   ~ 0
+USB with ESD 
+Text Notes 10569 7643 0    50   ~ 0
+1
+$EndSCHEMATC
