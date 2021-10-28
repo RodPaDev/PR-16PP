@@ -7,3 +7,6 @@
 [submodule "kicad-keyboard-parts.pretty"]
 	path = kicad-keyboard-parts.pretty
 	url = git@github.com:ebastler/kicad-keyboard-parts.pretty.git
+[submodule "Type-C.pretty"]
+	path = Type-C.pretty
+	url = git@github.com:ai03-2725/Type-C.pretty.git
